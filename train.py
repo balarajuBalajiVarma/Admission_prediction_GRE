@@ -11,7 +11,7 @@ missing_treated_df=missing_treatment(df)
 
 drop_const_df=drop_const_var(missing_treated_df)
 
-X,Y= splitdata(drop_const_var)
+X,Y= splitdata(drop_const_df)
 
 std_scalar=StandardScaler()
 arr1=std_scalar.fit_transform(X)

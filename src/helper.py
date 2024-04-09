@@ -1,4 +1,5 @@
 import pandas as pd
+from sklearn.model_selection import train_test_split
 
 #Extract data
 def Readdata():
@@ -25,6 +26,6 @@ def splitdata(df):
     return X,Y
 
 
-def train_test_split(arr1,Y):
+def train_test_splitfun(arr1,Y):
     xtrain,xtest,ytrain,ytest=train_test_split(arr1,Y,test_size=.2,random_state=0)
     return xtrain,xtest,ytrain,ytest
