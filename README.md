@@ -14,3 +14,8 @@
 
 ### Create the requirements.txt
 ### Create the template which contains (Src/code, templates, env, app.py etc)
+
+### Why setup.py is needed
+1. Usally we install libraries . So by default all the packages can be installed
+2. We create our packages in local for calling the function it should reflect in other sytem also. for that we take care in setup.py . while running requirements.txt this local function like src folder can also installed there.
+3. to install set.py (add -e . in requirements.txt)
