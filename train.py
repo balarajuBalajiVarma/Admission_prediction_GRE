@@ -22,3 +22,4 @@ lr.fit(xtrain,ytrain)
 
 
 pickle.dump(lr,open("Admission_lr_model.sav",'wb'))
+pickle.dump(std_scalar,open("std_scalar.sav",'wb'))
