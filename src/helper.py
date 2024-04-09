@@ -22,17 +22,8 @@ def drop_const_var(df):
 def splitdata(df):
     X=df.drop(columns=['Chance of Admit'],axis=1)
     Y=df['Chance of Admit']
+    return X,Y
 
-#pyscrips
-std_scalar=StandardScaler()
-arr1=std_scalar.fit_transform(X)
-df1=pd.DataFrame(arr1,columns=X.columns)
-
-lr=LinearRegression()
-lr.fit(xtrain,ytrain)
-
-import pickle
-pickle.dump(lr,open("Admission_lr_model.sav",'wb'))
 
 def train_test_split(arr1,Y):
     xtrain,xtest,ytrain,ytest=train_test_split(arr1,Y,test_size=.2,random_state=0)

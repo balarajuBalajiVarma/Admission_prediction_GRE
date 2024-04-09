@@ -18,7 +18,8 @@ list_of_files=[
     "app.py", # flask 
     # "store_index.py", #store vector db data
     "static/.gitkeep",
-    "templates/chat.html"
+    "templates/chat.html",
+    "train.py"
 
 ]
 
